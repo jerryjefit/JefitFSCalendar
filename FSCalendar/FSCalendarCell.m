@@ -196,9 +196,6 @@
         _titleLabel.textColor = textColor;
     }
     UIFont *titleFont = self.calendar.appearance.titleFont;
-    if (![titleFont isEqual:_titleLabel.font]) {
-        _titleLabel.font = titleFont;
-    }
     if (_subtitle) {
         textColor = self.colorForSubtitleLabel;
         if (![textColor isEqual:_subtitleLabel.textColor]) {
